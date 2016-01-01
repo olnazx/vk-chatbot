@@ -1,0 +1,15 @@
+
+  conversation:users:<bot_id>:<chat_id>     hash       ex in 1 day
+    user_id => user_fullname
+
+  captcha:<bot_id>                          set        
+    captcha_sid
+
+  limit:<bot_id>:<user_id>                  string     ex in N minutes
+    messages_count
+
+  Channels
+  --------
+
+  captcha:recognized:<bot_id>:<captcha_sid>
+    => captcha_key

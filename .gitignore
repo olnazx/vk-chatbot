@@ -1,0 +1,10 @@
+/.nginx
+/build
+/backend/config/config.js
+/backend/config/accounts.js
+/logs
+node_modules
+/test
+deploy.sh
+npm-debug.log
+package-lock.json

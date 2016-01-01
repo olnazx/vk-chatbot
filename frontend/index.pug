@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title botsforchats.ru
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
+    each css in htmlWebpackPlugin.files.css
+      link(rel="stylesheet" href=css)
+  body
+    #mount-point
+
+    each chunk in htmlWebpackPlugin.files.chunks
+      script(src=chunk.entry)
+
+    //- script(src="//vk.com/js/api/xd_connection.js?2")
+    //- script.
+    //-   VK.callMethod("resizeWindow", document.getElementById('app').clientWidth, 400);
